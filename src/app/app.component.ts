@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day2';
+
+  parentEvent(e) {
+
+    alert('this is event in parent' + e);
+  }
 }
