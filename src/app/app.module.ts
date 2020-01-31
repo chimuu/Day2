@@ -4,17 +4,27 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { HelloComponent } from './hello/hello.component';
+import { OrderItemComponent } from './order-item/order-item.component';
+import { MyJokesComponent } from './my-jokes/my-jokes.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { JokesService } from './jokes.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    HelloComponent
+    HelloComponent,
+    OrderItemComponent,
+    MyJokesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [JokesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

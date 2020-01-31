@@ -1,0 +1,7 @@
+<p>
+Here is a joke for you</p>
+
+<button (click)="getAJoke()">I'm bored</button>
+
+<div *ngIf="loading"> I'm thinking of a new joke </div>
+<div *ngIf="!loading"> {{joke}}</div>
